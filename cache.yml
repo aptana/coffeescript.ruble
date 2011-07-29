@@ -188,14 +188,400 @@ children:
   displayName: CoffeeScript
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-82ad7b6b-02a4-4251-b6c2-af9838572be5,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-22180e27-e406-421c-9299-7ee8bcebb5fd,
   path: bundle.rb, scope: source.coffee}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-1e3955c1-0142-47cd-b29a-7da13fa66b48
+  displayName: smart_typing_pairs-ff7abfc4-139c-4061-9474-cdef1a267a56
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.coffee
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Align Assignments
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['M3+M1+]']
+  outputPath: null
+  outputType: replace_selection
+  path: commands/align_assignments.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Compile and Display JS
+  input: [selection, document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+B]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/compile_and_display_js.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc """ quotes
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+"]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_"""_quotes.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc ''' quotes
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_'''_quotes.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc """ comment
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M4+#]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_comment.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: New Function
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M2+ENTER]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/new_function.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Run
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+R]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/run.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Run selected text
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+R]
+  outputPath: null
+  outputType: show_as_tooltip
+  path: commands/run_selected_text.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [fora]
+  displayName: Array Comprehension
+  expansion: "for ${1:name} in ${2:array}\n  ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [bfun]
+  displayName: Function (bound)
+  expansion: "${1:(${2:args}) }=>\n  ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [cla]
+  displayName: Class
+  expansion: "class ${1:ClassName}${2: extends ${3:Ancestor}}\n\n  ${4:constructor:\
+    \ (${5:args}) ->\n    ${6:# body...}}\n  $7"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [elif]
+  displayName: Else if
+  expansion: "else if ${1:condition}\n  ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [fun]
+  displayName: Function
+  expansion: "${1:name} = (${2:args}) ->\n  ${0:# body...}\n\n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [ife]
+  displayName: If .. Else
+  expansion: "if ${1:condition}\n  ${2:# body...}\nelse\n  ${3:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [if]
+  displayName: If
+  expansion: "if ${1:condition}\n  ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: ['#']
+  displayName: Interpolated Code
+  expansion: '#{${1:$TM_SELECTED_TEXT}}'
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['#']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: (string.quoted.double.coffee) - string source, (string.quoted.double.heredoc.coffee) - string source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [log]
+  displayName: log
+  expansion: console.log $0
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [foro]
+  displayName: Object comprehension
+  expansion: "for ${1:key}, ${2:value} of ${3:Object}\n  ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [forrex]
+  displayName: Range comprehension (exclusive)
+  expansion: "for ${1:name} in [${2:start}...${3:finish}]${4: by ${5:step}}\n  ${0:#\
+    \ body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [forr]
+  displayName: Range comprehension (inclusive)
+  expansion: "for ${1:name} in [${2:start}..${3:finish}]${4: by ${5:step}}\n  ${0:#\
+    \ body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties: null
+  displayName: Raw javascript
+  expansion: \`${1:`pbpaste`}\`
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M4+J]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [req]
+  displayName: require
+  expansion: ${2/^.*?([\w_]+).*$/\L$1/}= require(${2:'${1:sys}'})
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [swi]
+  displayName: Switch
+  expansion: "switch ${1:object}\n  when ${2:value}\n    ${0:# body...}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [ifte]
+  displayName: Ternary If
+  expansion: if ${1:condition} then ${2:value} else ${3:other}
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [try]
+  displayName: Try .. Catch
+  expansion: "try\n  $1\ncatch ${2:error}\n  $3"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [unl]
+  displayName: Unless
+  expansion: ${1:action} unless ${2:condition}
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: wnfuxranf@tznvy.pbz}
 decreaseIndentMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*(\}|\]|else|catch|finally)$)'}
