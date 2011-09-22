@@ -95,11 +95,12 @@ snippet 'Raw javascript' do |s|
   s.expansion = '\`${1:`pbpaste`}\`'
 end
 
-snippet 'require' do |s|
-  s.trigger = 'req'
-  s.scope = 'source.coffee'
-  s.expansion = '${2/^.*?([\w_]+).*$/\L$1/}= require(${2:\'${1:sys}\'})'
-end
+# FIXME Not currently working due to unsupported TextMate functionality
+# snippet 'require' do |s|
+  # s.trigger = 'req'
+  # s.scope = 'source.coffee'
+  # s.expansion = '${2/^.*?([\w_]+).*$/\L$1/}= require(${2:\'${1:sys}\'})'
+# end
 
 snippet 'Switch' do |s|
   s.trigger = 'swi'

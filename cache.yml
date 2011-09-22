@@ -1,6 +1,118 @@
 !!com.aptana.scripting.model.BundleElement
 author: Jeremy Ashkenas, Christopher Williams
 children:
+- !command
+  async: false
+  customProperties: null
+  displayName: Align Assignments
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['M3+M1+]']
+  outputPath: null
+  outputType: replace_selection
+  path: commands/align_assignments.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Compile and Display JS
+  input: [selection, document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+B]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/compile_and_display_js.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc """ quotes
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+"]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_"""_quotes.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc ''' quotes
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_'''_quotes.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc """ comment
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M4+#]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_comment.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: New Function
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M2+ENTER]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/new_function.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Run
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+R]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/run.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Run selected text
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+R]
+  outputPath: null
+  outputType: show_as_tooltip
+  path: commands/run_selected_text.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children:
@@ -188,126 +300,14 @@ children:
   displayName: CoffeeScript
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-22180e27-e406-421c-9299-7ee8bcebb5fd,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-e3c38117-77f8-4f00-8617-be18d15be949,
   path: bundle.rb, scope: source.coffee}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-ff7abfc4-139c-4061-9474-cdef1a267a56
+  displayName: smart_typing_pairs-d6f9c641-1230-4a4b-a95d-684f219ec178
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.coffee
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Align Assignments
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': ['M3+M1+]']
-  outputPath: null
-  outputType: replace_selection
-  path: commands/align_assignments.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Compile and Display JS
-  input: [selection, document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+B]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/compile_and_display_js.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Insert Heredoc """ quotes
-  input: [none, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+"]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_heredoc_"""_quotes.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Insert Heredoc ''' quotes
-  input: [none, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+']
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_heredoc_'''_quotes.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Insert Heredoc """ comment
-  input: [none, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M4+#]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_heredoc_comment.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: New Function
-  input: [selection, word]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M2+ENTER]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/new_function.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Run
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+R]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/run.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Run selected text
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+R]
-  outputPath: null
-  outputType: show_as_tooltip
-  path: commands/run_selected_text.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
@@ -510,21 +510,6 @@ children:
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
-    prefix_values: [req]
-  displayName: require
-  expansion: ${2/^.*?([\w_]+).*$/\L$1/}= require(${2:'${1:sys}'})
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/snippets.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.SnippetElement
-  async: false
-  customProperties:
     prefix_values: [swi]
   displayName: Switch
   expansion: "switch ${1:object}\n  when ${2:value}\n    ${0:# body...}"
@@ -590,7 +575,7 @@ description: 'Coffeescript ruble ported from official Coffeescript Textmate bund
   '
 displayName: CoffeeScript
 fileTypeRegistry: {'*.coffee': source.coffee, Cakefile: source.coffee}
-fileTypes: ['*.coffee', Cakefile]
+fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile]
 foldingStartMarkers: {!scope 'source.coffee': !regexp '(?-mix:.*(->|=>)\s*$|.*[\[{]\s*$)'}
 foldingStopMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*$|^\s*[}\]]\s*$)'}
 increaseIndentMarkers: {!scope 'source.coffee': !regexp "(?x-mi:\n    ^\\s*\n    (.*class\n\
