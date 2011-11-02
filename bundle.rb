@@ -56,7 +56,7 @@ END
       submenu.command 'Insert Heredoc """ comment'
       submenu.command 'Align Assignments'
       submenu.command 'Raw javascript'
-      submenu.command 'require'
+      #submenu.command 'require'
       submenu.command 'Interpolated Code'
       submenu.command 'log'
     end
