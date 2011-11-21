@@ -3,6 +3,7 @@ require 'ruble'
 bundle 'CoffeeScript' do |bundle|
   bundle.author = 'Jeremy Ashkenas, Christopher Williams'
   bundle.contact_email_rot_13 = 'wnfuxranf@tznvy.pbz'
+  bundle.repository = "git://github.com/aptana/coffeescript.ruble.git"
   bundle.description =  <<END
 Coffeescript ruble ported from official Coffeescript Textmate bundle.
 END

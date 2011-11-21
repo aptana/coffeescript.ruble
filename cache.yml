@@ -553,11 +553,11 @@ children:
   displayName: CoffeeScript
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-fb172e3a-1655-4d84-b812-bf60e7c7971f,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-b7e664b1-b3ec-492b-a228-baa492145680,
   path: bundle.rb, scope: source.coffee}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-b6960fd2-4cb9-4ffc-b9a5-93396e9d685b
+  displayName: smart_typing_pairs-b907d4f2-4849-4afd-bfff-cf8c1abff04b
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.coffee
@@ -569,7 +569,7 @@ description: 'Coffeescript ruble ported from official Coffeescript Textmate bund
   '
 displayName: CoffeeScript
 fileTypeRegistry: {'*.coffee': source.coffee, Cakefile: source.coffee}
-fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile]
+fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile, '*.coffee', Cakefile]
 foldingStartMarkers: {!scope 'source.coffee': !regexp '(?-mix:.*(->|=>)\s*$|.*[\[{]\s*$)'}
 foldingStopMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*$|^\s*[}\]]\s*$)'}
 increaseIndentMarkers: {!scope 'source.coffee': !regexp "(?x-mi:\n    ^\\s*\n    (.*class\n\
@@ -581,5 +581,5 @@ increaseIndentMarkers: {!scope 'source.coffee': !regexp "(?x-mi:\n    ^\\s*\n   
 license: null
 licenseUrl: null
 path: bundle.rb
-repository: null
+repository: git://github.com/aptana/coffeescript.ruble.git
 visible: true
