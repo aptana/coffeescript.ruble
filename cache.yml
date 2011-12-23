@@ -1,7 +1,196 @@
 !!com.aptana.scripting.model.BundleElement
 author: Jeremy Ashkenas, Christopher Williams
 children:
-- !command
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children:
+    - children: &id001 []
+      commandName: Run
+      customProperties: null
+      displayName: Run
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Compile and Display JS
+      customProperties: null
+      displayName: Compile and Display JS
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Run selected text
+      customProperties: null
+      displayName: Run selected text
+      path: bundle.rb
+      scope: null
+    commandName: Run
+    customProperties: null
+    displayName: Run
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: If
+      customProperties: null
+      displayName: If
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: If .. Else
+      customProperties: null
+      displayName: If .. Else
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Else if
+      customProperties: null
+      displayName: Else if
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Ternary If
+      customProperties: null
+      displayName: Ternary If
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Unless
+      customProperties: null
+      displayName: Unless
+      path: bundle.rb
+      scope: null
+    commandName: Control
+    customProperties: null
+    displayName: Control
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: New Function
+      customProperties: null
+      displayName: New Function
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Function
+      customProperties: null
+      displayName: Function
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Function (bound)
+      customProperties: null
+      displayName: Function (bound)
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Array Comprehension
+      customProperties: null
+      displayName: Array Comprehension
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Object comprehension
+      customProperties: null
+      displayName: Object comprehension
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Range comprehension (exclusive)
+      customProperties: null
+      displayName: Range comprehension (exclusive)
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Range comprehension (inclusive)
+      customProperties: null
+      displayName: Range comprehension (inclusive)
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Switch
+      customProperties: null
+      displayName: Switch
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Class
+      customProperties: null
+      displayName: Class
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Try .. Catch
+      customProperties: null
+      displayName: Try .. Catch
+      path: bundle.rb
+      scope: null
+    commandName: Constructs
+    customProperties: null
+    displayName: Constructs
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Insert Heredoc """ quotes
+      customProperties: null
+      displayName: Insert Heredoc """ quotes
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Insert Heredoc ''' quotes
+      customProperties: null
+      displayName: Insert Heredoc ''' quotes
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Insert Heredoc """ comment
+      customProperties: null
+      displayName: Insert Heredoc """ comment
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Align Assignments
+      customProperties: null
+      displayName: Align Assignments
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Raw javascript
+      customProperties: null
+      displayName: Raw javascript
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Interpolated Code
+      customProperties: null
+      displayName: Interpolated Code
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: log
+      customProperties: null
+      displayName: log
+      path: bundle.rb
+      scope: null
+    commandName: Other
+    customProperties: null
+    displayName: Other
+    path: bundle.rb
+    scope: null
+  commandName: CoffeeScript
+  customProperties: null
+  displayName: CoffeeScript
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-665e5e1b-6caf-4eb7-b102-f027336c4476,
+  path: bundle.rb, scope: source.coffee}
+- !!com.aptana.scripting.model.SmartTypingPairsElement
+  customProperties: null
+  displayName: smart_typing_pairs-c1daae8b-48eb-462c-bf2e-b93627e23be1
+  pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
+  path: bundle.rb
+  scope: source.coffee
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Align Assignments
@@ -15,21 +204,21 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Compile and Display JS
-  input: [selection, document]
+  input: [document]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+B]
   outputPath: null
-  outputType: show_as_html
+  outputType: discard
   path: commands/compile_and_display_js.rb
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Insert Heredoc """ quotes
@@ -43,7 +232,7 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Insert Heredoc ''' quotes
@@ -57,7 +246,7 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Insert Heredoc """ comment
@@ -71,7 +260,7 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: New Function
@@ -85,7 +274,7 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Run
@@ -99,7 +288,7 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Run selected text
@@ -372,195 +561,6 @@ children:
   runType: current_thread
   scope: source.coffee
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children:
-    - children: &id001 []
-      commandName: Run
-      customProperties: null
-      displayName: Run
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Compile and Display JS
-      customProperties: null
-      displayName: Compile and Display JS
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Run selected text
-      customProperties: null
-      displayName: Run selected text
-      path: bundle.rb
-      scope: null
-    commandName: Run
-    customProperties: null
-    displayName: Run
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: If
-      customProperties: null
-      displayName: If
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: If .. Else
-      customProperties: null
-      displayName: If .. Else
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Else if
-      customProperties: null
-      displayName: Else if
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Ternary If
-      customProperties: null
-      displayName: Ternary If
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Unless
-      customProperties: null
-      displayName: Unless
-      path: bundle.rb
-      scope: null
-    commandName: Control
-    customProperties: null
-    displayName: Control
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: New Function
-      customProperties: null
-      displayName: New Function
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Function
-      customProperties: null
-      displayName: Function
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Function (bound)
-      customProperties: null
-      displayName: Function (bound)
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Array Comprehension
-      customProperties: null
-      displayName: Array Comprehension
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Object comprehension
-      customProperties: null
-      displayName: Object comprehension
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Range comprehension (exclusive)
-      customProperties: null
-      displayName: Range comprehension (exclusive)
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Range comprehension (inclusive)
-      customProperties: null
-      displayName: Range comprehension (inclusive)
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Switch
-      customProperties: null
-      displayName: Switch
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Class
-      customProperties: null
-      displayName: Class
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Try .. Catch
-      customProperties: null
-      displayName: Try .. Catch
-      path: bundle.rb
-      scope: null
-    commandName: Constructs
-    customProperties: null
-    displayName: Constructs
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Insert Heredoc """ quotes
-      customProperties: null
-      displayName: Insert Heredoc """ quotes
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Insert Heredoc ''' quotes
-      customProperties: null
-      displayName: Insert Heredoc ''' quotes
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Insert Heredoc """ comment
-      customProperties: null
-      displayName: Insert Heredoc """ comment
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Align Assignments
-      customProperties: null
-      displayName: Align Assignments
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Raw javascript
-      customProperties: null
-      displayName: Raw javascript
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Interpolated Code
-      customProperties: null
-      displayName: Interpolated Code
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: log
-      customProperties: null
-      displayName: log
-      path: bundle.rb
-      scope: null
-    commandName: Other
-    customProperties: null
-    displayName: Other
-    path: bundle.rb
-    scope: null
-  commandName: CoffeeScript
-  customProperties: null
-  displayName: CoffeeScript
-  path: bundle.rb
-  scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-b7e664b1-b3ec-492b-a228-baa492145680,
-  path: bundle.rb, scope: source.coffee}
-- !!com.aptana.scripting.model.SmartTypingPairsElement
-  customProperties: null
-  displayName: smart_typing_pairs-b907d4f2-4849-4afd-bfff-cf8c1abff04b
-  pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
-  path: bundle.rb
-  scope: source.coffee
 copyright: null
 customProperties: {contact_email_rot_13: wnfuxranf@tznvy.pbz}
 decreaseIndentMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*(\}|\]|else|catch|finally)$)'}
@@ -569,7 +569,7 @@ description: 'Coffeescript ruble ported from official Coffeescript Textmate bund
   '
 displayName: CoffeeScript
 fileTypeRegistry: {'*.coffee': source.coffee, Cakefile: source.coffee}
-fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile, '*.coffee', Cakefile]
+fileTypes: ['*.coffee', Cakefile]
 foldingStartMarkers: {!scope 'source.coffee': !regexp '(?-mix:.*(->|=>)\s*$|.*[\[{]\s*$)'}
 foldingStopMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*$|^\s*[}\]]\s*$)'}
 increaseIndentMarkers: {!scope 'source.coffee': !regexp "(?x-mi:\n    ^\\s*\n    (.*class\n\
