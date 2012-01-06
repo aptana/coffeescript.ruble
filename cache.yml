@@ -32,34 +32,6 @@ children:
 - !command
   async: false
   customProperties: null
-  displayName: Insert Heredoc """ quotes
-  input: [none, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+"]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_heredoc_"""_quotes.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Insert Heredoc ''' quotes
-  input: [none, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+']
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/insert_heredoc_'''_quotes.rb
-  runType: current_thread
-  scope: source.coffee
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
   displayName: Insert Heredoc """ comment
   input: [none, line]
   inputPath: null
@@ -553,14 +525,28 @@ children:
   displayName: CoffeeScript
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-b7e664b1-b3ec-492b-a228-baa492145680,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-644b7947-0c43-4d46-9771-657b23aec9cb,
   path: bundle.rb, scope: source.coffee}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-b907d4f2-4849-4afd-bfff-cf8c1abff04b
+  displayName: smart_typing_pairs-7c268824-0773-497a-88fe-532b056eb639
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.coffee
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Heredoc ''' quotes
+  input: [none, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+']
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/insert_heredoc_single_quotes.rb
+  runType: current_thread
+  scope: source.coffee
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: wnfuxranf@tznvy.pbz}
 decreaseIndentMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*(\}|\]|else|catch|finally)$)'}
@@ -569,7 +555,8 @@ description: 'Coffeescript ruble ported from official Coffeescript Textmate bund
   '
 displayName: CoffeeScript
 fileTypeRegistry: {'*.coffee': source.coffee, Cakefile: source.coffee}
-fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile, '*.coffee', Cakefile]
+fileTypes: ['*.coffee', Cakefile, '*.coffee', Cakefile, '*.coffee', Cakefile, '*.coffee',
+  Cakefile]
 foldingStartMarkers: {!scope 'source.coffee': !regexp '(?-mix:.*(->|=>)\s*$|.*[\[{]\s*$)'}
 foldingStopMarkers: {!scope 'source.coffee': !regexp '(?-mix:^\s*$|^\s*[}\]]\s*$)'}
 increaseIndentMarkers: {!scope 'source.coffee': !regexp "(?x-mi:\n    ^\\s*\n    (.*class\n\
