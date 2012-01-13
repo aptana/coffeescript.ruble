@@ -22,10 +22,10 @@ en:
   try_catch: 'Try .. Catch'
   other: 'Other'
   heredoc_double_quotes:  'Insert Heredoc """ quotes'
-  heredoc_single_quotes: 'Insert Heredoc \'\'\' quotes'
+  heredoc_single_quotes: "Insert Heredoc ''' quotes"
   heredoc_comment: 'Insert Heredoc """ comment'
   align_assignments: 'Align Assignments'
-  raw_javascript:'Raw javascript'
+  raw_javascript: 'Raw javascript'
   require: 'require'
   interpolated_code: 'Interpolated Code'
   log: 'log'
