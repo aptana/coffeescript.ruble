@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Insert Heredoc """ quotes' do |cmd|
+command t(:heredoc_double_quotes) do |cmd|
   cmd.key_binding = 'M1+"'
   cmd.scope = 'source.coffee'
   cmd.output = :insert_as_snippet

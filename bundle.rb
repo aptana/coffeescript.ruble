@@ -1,11 +1,9 @@
 require 'ruble'
 
-bundle 'CoffeeScript' do |bundle|
+bundle t(:bundle_name) do |bundle|
   bundle.author = 'Jeremy Ashkenas, Christopher Williams'
   bundle.contact_email_rot_13 = 'wnfuxranf@tznvy.pbz'
-  bundle.description =  <<END
-Coffeescript ruble ported from official Coffeescript Textmate bundle.
-END
+  bundle.description = 'Coffeescript ruble ported from official Coffeescript Textmate bundle.'
   # Folding
   start_folding = /.*(->|=>)\s*$|.*[\[{]\s*$/
   end_folding = /^\s*$|^\s*[}\]]\s*$/
@@ -25,40 +23,40 @@ END
   # Fallback to use our text editor if coffeescript editor isn't available
   bundle.file_types['source.coffee'] = '*.coffee', 'Cakefile'
 
-  bundle.menu 'CoffeeScript' do |main_menu|
-    main_menu.menu 'Run' do |submenu|
-      submenu.command 'Run'
-      submenu.command 'Compile and Display JS'
-      submenu.command 'Run selected text'
+  bundle.menu t(:bundle_name) do |main_menu|
+    main_menu.menu t(:run) do |submenu|
+      submenu.command t(:run)
+      submenu.command t(:compile_and_display_js)
+      submenu.command t(:run_selected_text)
     end
-    main_menu.menu 'Control' do |submenu|
-      submenu.command 'If'
-      submenu.command 'If .. Else'
-      submenu.command 'Else if'
-      submenu.command 'Ternary If'
-      submenu.command 'Unless'
+    main_menu.menu t(:control) do |submenu|
+      submenu.command t(:if)
+      submenu.command t(:if_else)
+      submenu.command t(:else_if)
+      submenu.command t(:ternary_if)
+      submenu.command t(:unless)
     end
-    main_menu.menu 'Constructs' do |submenu|
-      submenu.command 'New Function'
-      submenu.command 'Function'
-      submenu.command 'Function (bound)'
-      submenu.command 'Array Comprehension'
-      submenu.command 'Object comprehension'
-      submenu.command 'Range comprehension (exclusive)'
-      submenu.command 'Range comprehension (inclusive)'
-      submenu.command 'Switch'
-      submenu.command 'Class'
-      submenu.command 'Try .. Catch'
+    main_menu.menu t(:constructs) do |submenu|
+      submenu.command t(:new_function)
+      submenu.command t(:function)
+      submenu.command t(:bound_function)
+      submenu.command t(:array_comp)
+      submenu.command t(:object_comp)
+      submenu.command t(:range_comp_exclusive)
+      submenu.command t(:range_comp_inclusive)
+      submenu.command t(:switch)
+      submenu.command t(:class)
+      submenu.command t(:try_catch)
     end
-    main_menu.menu 'Other' do |submenu|
-      submenu.command 'Insert Heredoc """ quotes'
-      submenu.command 'Insert Heredoc \'\'\' quotes'
-      submenu.command 'Insert Heredoc """ comment'
-      submenu.command 'Align Assignments'
-      submenu.command 'Raw javascript'
-      submenu.command 'require'
-      submenu.command 'Interpolated Code'
-      submenu.command 'log'
+    main_menu.menu t(:other) do |submenu|
+      submenu.command t(:heredoc_double_quotes)
+      submenu.command t(:heredoc_single_quotes)
+      submenu.command t(:heredoc_comment)
+      submenu.command t(:align_assignments)
+      submenu.command t(:raw_javascript)
+      submenu.command t(:require)
+      submenu.command t(:interpolated_code)
+      submenu.command t(:log)
     end
   end
 end
