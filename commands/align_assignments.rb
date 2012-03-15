@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Align Assignments' do |cmd|
+command t(:align_assignments) do |cmd|
   cmd.key_binding = 'M3+M1+]'
   cmd.scope = 'source.coffee'
   cmd.output = :replace_selection
