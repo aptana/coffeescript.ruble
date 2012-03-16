@@ -1,7 +1,7 @@
 require 'ruble'
 require 'ruble/editor'
 
-command 'Compile and Display JS' do |cmd|
+command t(:compile_and_display_js) do |cmd|
   cmd.key_binding = 'M1+B'
   cmd.scope = 'source.coffee'
   cmd.output = :discard

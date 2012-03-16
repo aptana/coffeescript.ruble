@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Insert Heredoc """ comment' do |cmd|
+command t(:heredoc_comment) do |cmd|
   cmd.key_binding = 'M4+#'
   cmd.scope = 'source.coffee'
   cmd.output = :insert_as_snippet

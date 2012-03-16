@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Run' do |cmd|
+command t(:run) do |cmd|
   cmd.key_binding = 'M1+R'
   cmd.scope = 'source.coffee'
   cmd.output = :show_as_html
